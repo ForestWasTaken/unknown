@@ -1,7 +1,7 @@
 game.StarterGui:SetCore("SendNotification", {
     Title = 'DISCORD SERVER';
       Text = 'discord.gg/booga';
-    Duration = 69;
+    Duration = 15;
 })
 
 local Players = game:GetService'Players'
@@ -14,6 +14,8 @@ local List = {
     2634438358; -- ???
     1380846697; -- ???
     3392307522; -- ???
+    1497173687; -- ???
+    3003846151; -- ???
 }
 
 while wait() do
